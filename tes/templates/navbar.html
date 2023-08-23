@@ -1,92 +1,36 @@
 {% load static %}
-
-
-
-<nav class="bg-[#F7F8FC]  fixed w-full z-20 top-0 left-0 border-b shadow-md">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-
-
-    <a href="/" class="flex items-center">
-      <img src="{% static 'tesd.png' %}"class="flex title-font font-medium items-center" alt="logo" width="45" height="45">
-      <span class="self-center text-4xl font-semibold whitespace-nowrap text-black"></span>
-     </a>
-  
-  <div class="flex md:order-2">
-    <ul>
-    
-    <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800">
-      <a href="{% url 'photo:subscribe'%}"  class="relative px-5 py-2.5 transition-all ease-in duration-75 text-black bg-white rounded-md group-hover:bg-opacity-0">
-        Get Updates
-      </a>
-    </button>
-    {% if user.is_authenticated %}
-      <button type="button" class=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-      <a class="nav-link active" href="{% url 'photo:create' %}">Add a photo</a>
-      </button>
-    {% endif %}
-    </ul>
-      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-    </button>
-  </div>
-
 <style>
-  .nav-link {
-      position: relative;
-      text-decoration: none;
-      color: #000; /* Default link color */
-      transition: color 0.3s;
-  }
-
-  .nav-link::before {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background-color: #10B981; /* Green-400 */
-      transition: width 0.3s ease-in-out;
-  }
-
-  .nav-link:hover {
-      color: #10B981; /* Green-400 */
-  }
-
-  .nav-link:hover::before {
-      width: 100%;
+  .collapse{
+    visibility: visible;
   }
 </style>
 
 
-<div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-    <ul class="flex flex-col md:p-0 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
-        <li>
-            <a href="/" class=" nav-link block py-2 text-xl hover:bg-gray-100 ">Home</a>
-        </li>
-        <li>
-            <a class=" nav-link block  py-2 text-xl hover:bg-gray-100 " href="{% url 'photo:list' %}">Our Activities</a>
-        </li>
-        <li>
-            <a class=" nav-link block  py-2 text-xl hover:bg-gray-100 " href="{% url 'photo:article' %}">Magazines & Article's</a>
-        </li>
-        <li>
-            <a href="/#about" class=" nav-link block py-2 text-xl hover:bg-gray-100 ">About</a>
-        </li>
-        <li>
-            <a href="/#team-section" class=" nav-link block  py-2 text-xl hover:bg-gray-100 ">Team</a>
-        </li>
-        <li>
-            <a href="/#contact" class=" nav-link block py-2 text-xl hover:bg-gray-100 ">Contact</a>
-        </li>
-    </ul>
-</div>
 
-  </div>
-</nav>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            {% comment %} <h2 class="mb-2 text-white">Logistica</h2> {% endcomment %}
+            <img src="{% static 'tesd.png' %}"class="flex title-font font-medium items-center" alt="logo" width="45" height="45">
 
-
-
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="/" class="nav-item nav-link active">Home</a>
+                <a href="{% url 'photo:list' %}" class="nav-item nav-link">Events</a>
+                <a href="{% url 'photo:article' %}" class="nav-item nav-link">Articles</a>
+                <a href="/#team-section" class="nav-item nav-link">Team</a>
+                <a href="/#contact" class="nav-item nav-link">Contact</a>
+            </div>
+            
+            {% if user.is_authenticated %}
+              <button type="button" class=" btn btn-secondary py-md-3 px-md-5 me-3 animated slideInLeft">
+              <a class="text-black" href="{% url 'photo:create' %}">Add a photo</a>
+              </button>
+            {% endif %}
+        </div>
+    </nav>
+    <!-- Navbar End -->

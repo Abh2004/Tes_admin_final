@@ -37,12 +37,16 @@
   }
   
 </style>
-<h1 class="ml11 mb-4 pt-40 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-4xl text-center">
+
+
+
+
+{% comment %} <h1 class="ml11 mb-4 pt-40 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-4xl text-center">
   <span class="text-wrapper">
     <span class="line line1"></span>
     TECHNOLOGY <span class="letters">ENVIRONMENT</span> SOCIETY
   </span>
-</h1>
+</h1> {% endcomment %}
 
 <!-- Add the required JavaScript for the animation -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
@@ -87,7 +91,7 @@
 
 {% comment %} carousel {% endcomment %}
 
-<div id="default-carousel" class="relative w-full" data-carousel="slide" data-ride="carousel" data-interval="3000">
+ {% comment %} <div id="default-carousel" class="relative w-full" data-carousel="slide" data-ride="carousel" data-interval="3000">
     <!-- Carousel wrapper -->
     <div class="relative h-100 overflow-hidden rounded-lg md:h-96">
       <!-- Item 1 -->
@@ -136,125 +140,150 @@
         <span class="sr-only">Next</span>
       </span>
     </button>
-</div> 
+</div>   {% endcomment %}
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-<h1 class="mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl py-10 text-center" style="font-size: 30px;">
-  <mark class="px-2 text-white bg-red-600 rounded dark:bg-red-500 ">OUR STORY</mark>
-</h1>
-
-
-  
-
-
-
-
-
-  <section>
-    <div class="px-4 py-7 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-7">
-      <div class="flex flex-wrap items-center mx-auto max-w-7xl">
-        <div class="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
-          <div>
-            <div class="relative w-full max-w-lg">
-              <div class="absolute top-0 rounded-full bg-green-300 -left-4 w-72 h-72 mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-  
-              <div class="absolute rounded-full bg-blue-300 -bottom-24 right-20 w-72 h-72 mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
-              <div class="relative">
-                <img class="object-cover object-center mx-auto rounded-lg shadow-2xl w-full h-full" alt="hero" src="{% static 'IMG_3274.JPG' %}">
-            </div>
-            
-            </div>
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5">
+      <div class="owl-carousel header-carousel position-relative mb-5">
+          <div class="owl-carousel-item position-relative">
+              <img class="img-fluid" src="{% static 'banner1.avif' %}" alt="">
+              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
+                  <div class="container">
+                      <div class="row justify-content-start">
+                          <div class="col-10 col-lg-8">
+                              <h1 class="display-3 text-white animated slideInDown mb-4">TECHNOLOGY <span style="color:#66FF00;">ENVIRONMENT</span> SOCIETY</h1>
+                             
+                              <button style="color : #89CFF0 ;" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">
+                                <a href="{% url 'photo:subscribe'%}"  class="">
+                                  Get Updates
+                                </a>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-        
-        </div>
-
-        <div id ="about" class="flex flex-col items-start mt-12 mb-16 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
-          <span class="mb-8 text-xs font-bold tracking-widest text-blue-600 uppercase">  IIT KHARAGPUR</span>
-          <h5 class="mb-8 text-3xl font-bold leading-none tracking-tighter text-neutral-600 md:text-3xl lg:text-3xl">Technology Environment Society
-          </h5>
-          
-<p class="text-gray-700 dark:text-gray-700">"Drawing wisdom from Mahatma Gandhi's insightful words, 'The best way to find yourself is to lose yourself in the service of others,' we are resolutely committed to forging an equitable and harmonious world that stands the test of time. The formidable repercussions of climate change imperil us all due to our heedless exploitation and human-induced degradation of precious natural resources.
-
-  A staggering 24% of global fatalities stem from the consequences of environmental degradation, encompassing a distressing 28% of mortality among children under five. Consequently, immediate collective action from stakeholders is imperative to reinstate the well-being of both humanity and the ecosystem. Within the folds of the Technology Environment Society, we ardently labor to cultivate an equitable and sustainable society, meticulously addressing every facet of sustainability—be it environmental, social, or economic. Yet, a recurrent fallacy persists whenever the topic of sustainability arises: the notion that economic progress and environmental preservation are incompatible. In truth, a delicate balance must be struck amongst these three pillars of sustainability. Our aspirations for this symbiotic synergy encompass the embracement of education, empowerment, and egalitarianism, fostering robust health and adaptability in our 'ONLY HOME.'
-  
-  Our Vision
-  Embarking on a trajectory toward an impartial and sustainable society // Envisioning a future where equity and sustainability intertwine."
-
-
-            
-          
-        </div>
+          <div class="owl-carousel-item position-relative">
+              <img class="img-fluid" src="{% static 'banner1.avif' %}" alt="">
+              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
+                  <div class="container">
+                      <div class="row justify-content-start">
+                          <div class="col-10 col-lg-8">
+                              
+                              <h1 class="display-3 text-white animated slideInDown mb-4">TECHNOLOGY<span class="text-primary">ENVIRONMENT</span> SOCIETY</h1>
+                              
+                              <button  class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">
+                                <a href="{% url 'photo:subscribe'%}"  class="">
+                                  Get Updates
+                                </a>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
-  </section>
+  </div>
+  <!-- Carousel End -->
+
+
+
+
+
+    <!-- About Start -->
+    <div class="container-fluid overflow-hidden py-5 px-lg-0">
+      <div class="container about py-5 px-lg-0">
+          <div class="row g-5 mx-lg-0">
+              <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px;">
+                  <div class="position-relative h-100">
+                      <img class="position-absolute img-fluid w-100 h-100" src="{% static 'IMG_3274.JPG' %}" style="object-fit: cover;" alt="">
+                  </div>
+              </div>
+              <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
+                  <h6 class="text-secondary text-uppercase mb-3"></h6>
+
+                  <h1 class="mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl py-10 text-center" style="font-size: 30px;">
+                    <mark class="px-2 text-white bg-red-600 rounded dark:bg-red-500 ">OUR STORY</mark>
+                  </h1>
+                  
+                                    <p class="mb-5">"Drawing wisdom from Mahatma Gandhi's insightful words, 'The best way to find yourself is to lose yourself in the service of others,' we are resolutely committed to forging an equitable and harmonious world that stands the test of time. The formidable repercussions of climate change imperil us all due to our heedless exploitation and human-induced degradation of precious natural resources.
+
+                    A staggering 24% of global fatalities stem from the consequences of environmental degradation, encompassing a distressing 28% of mortality among children under five. Consequently, immediate collective action from stakeholders is imperative to reinstate the well-being of both humanity and the ecosystem. Within the folds of the Technology Environment Society, we ardently labor to cultivate an equitable and sustainable society, meticulously addressing every facet of sustainability—be it environmental, social, or economic. Yet, a recurrent fallacy persists whenever the topic of sustainability arises: the notion that economic progress and environmental preservation are incompatible. In truth, a delicate balance must be struck amongst these three pillars of sustainability. Our aspirations for this symbiotic synergy encompass the embracement of education, empowerment, and egalitarianism, fostering robust health and adaptability in our 'ONLY HOME.'
+                    
+                    Our Vision
+                    Embarking on a trajectory toward an impartial and sustainable society // Envisioning a future where equity and sustainability intertwine."
+                  </p>
+                  <div class="row g-4 mb-5">
+                      <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                          <i class="fa fa-globe fa-3x text-primary mb-3"></i>
+                          <h5>Global Coverage</h5>
+                          <p class="m-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam justo.</p>
+                      </div>
+                      <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                          <i class="fa fa-shipping-fast fa-3x text-primary mb-3"></i>
+                          <h5>On Time Delivery</h5>
+                          <p class="m-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam justo.</p>
+                      </div>
+                  </div>
+                  <a href="" class="btn btn-primary py-3 px-5">Explore More</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- About End -->
+
+
+
+
+
+
+
+    <!-- Service Start -->
+    <div id = "Events" class="container-xxl py-5">
+      <div class="container py-5">
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+              
+            <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 ">Our <span class="text-blue-600 dark:text-blue-500">Events</span></h1>
+
+
+          </div>
+          <div class="row g-4">
+            {% for photo in photos|slice:":3" %}
+
+              <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                  <div class="service-item p-4">
+                      <div class="overflow-hidden mb-4">
+                          <img class="img-fluid" src="{% if photo.image %}{{ photo.image.url }}{% else %}{% static 'ftp/logo.png' %}{% endif %}" alt="">
+                      </div>
+                      <h4 class="mb-3">{{ photo.title }}</h4>
+                      <p>{{ photo.description|truncatewords:15 }}</p>
+                      <a class="btn-slide mt-2" href="{% url 'photo:detail' photo.id %}" ><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                  </div>
+              </div>
+              {% endfor %}
+          </div>
+      </div>
+  </div>
+  <!-- Service End -->
 
   
+
+
   
-  <h1 class="mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl py-10 text-center" style="font-size: 30px;">
-    OUR <mark class="px-2 text-white bg-yellow-600 rounded dark:bg-yellow-500 ">IMPACT</mark>
-</h1>
+  <h1 class="mb-4 text-4xl text-center font-extrabold leading-none tracking-tight text-gray-900 ">OUR <span class="text-blue-600 dark:text-blue-500">IMPACT</span></h1>
+
     <div class="relative p-7">
       <img class="object-contain w-full h-59 sm:h-59" src="https://img.freepik.com/premium-photo/landscape-long-banner-panorama-blue-lake-summer-europe-nature-background_362376-331.jpg?w=2000" alt="" />
     </div>
   
-    <h1 class="mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl py-10 text-center" style="font-size: 30px;">
-        OUR RECENT <mark class="px-2 text-white bg-yellow-600 rounded dark:bg-blue-500 ">ACTIVITIES</mark>
-    </h1>
-    <style>
-      .row-container {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 30px; 
-        margin: 35px;
-      }
-      
-      .image-container {
-        margin: 5px;
-      }
-      .truncate-2-lines {
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-    </style>
+
     
-    <div class="row-container ">
-      {% for photo in photos|slice:":4" %}
-      <section>
-        <div class="mx-auto flex w-80 flex-col justify-center bg-white rounded-2xl shadow-xl shadow-gray-400/20 image-container">
-          <a href="{% url 'photo:detail' photo.id %}" class="">
-            {% comment %} <img class="aspect-video w-90 rounded-t-2xl object-cover object-center" src="{{ photo.image.url }}"> {% endcomment %}
-            <img src="{% if photo.image %}{{ photo.image.url }}{% else %}{% static 'ftp/logo.png' %}{% endif %}" class="aspect-video w-90 rounded-r-2xl object-cover object-center" />
-          </a>
-    
-          <div class="p-6">
-            <h1 class="text-2xl font-medium text-gray-700 pb-2">{{ photo.title }}</h1>
-            <p class="text text-gray-500 leading-6 truncate-2-lines">{{ photo.description }}</p>
-          </div>
-        </div>
-      </section>
-      {% endfor %}
-    </div>
-    
-    <h1 class="mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl py-10 text-center" style="font-size: 30px;">
-      OUR <mark class="px-2 text-white bg-red-600 rounded dark:bg-orange-500 ">MAGAZINES </mark>& <mark class="px-2 text-white bg-yellow-600 rounded dark:bg-orange-500 ">ARTICLE'S</mark>
-  </h1>
+  <h1 class="mb-4 text-4xl  text-center font-extrabold leading-none tracking-tight text-gray-900 ">MAGAZINES <span class="text-blue-600 dark:text-blue-500">ARTICLE'S</span></h1>
+
 
   {% comment %} <div class="row-container">
     {% for file in files|slice:":4" %}
@@ -301,589 +330,272 @@
 
 
 
-    {% comment %} <div id="team-section"class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div class="mx-auto mb-10 lg:max-w-xl sm:text-center">
-        <h1 class="mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl py-10 text-center" style="font-size: 30px;">
-          OUR <mark class="px-2 text-white bg-blue-600 rounded dark:bg-blue-500 ">TEAM </mark>
-      </h1>
-        <p class="text-base text-gray-700 md:text-lg">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-        </p>
+
+
+
+
+
+
+  <div id ="team-section" class="container-xxl py-5">
+    <div class="container py-5">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 ">OUR <span class="text-blue-600 dark:text-blue-500">TEAM</span></h1>
+
+        </div>
+        <div class="row g-4 p-5 ">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="team-item p-4">
+                <div class="overflow-hidden mb-4">
+                    <img class="img-fluid" src="https://media.licdn.com/dms/image/D4D03AQF-2Ed-zjHZFg/profile-displayphoto-shrink_400_400/0/1692660953796?e=1698278400&v=beta&t=G4ZJ0O1826kbWOB_XG_ilGL5m6XKV3jP9j2Gq8MYHWo" alt="">
+                </div>
+                <h5 class="mb-0">RAJVARDHAN SINGH JADON</h5>
+                <p>GOVERNOR</p>
+                <div class="btn-slide mt-1">
+                    <i class="fa fa-share"></i>
+                    <span>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/rajvardhan-singh-jadon-a580781a0/"><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </span>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="team-item p-4">
+                <div class="overflow-hidden mb-4">
+                    <img class="img-fluid" src="https://media.licdn.com/dms/image/D5603AQHEVQDyH61D2g/profile-displayphoto-shrink_400_400/0/1670048053250?e=1698278400&v=beta&t=1jPXnkAIz2a08aA7rvNNr4P1yNItQUuvrN4GFJBwr58" alt="">
+                </div>
+                <h5 class="mb-0">BHUPESH VERMA</h5>
+                <p>GOVERNOR</p>
+                <div class="btn-slide mt-1">
+                    <i class="fa fa-share"></i>
+                    <span>
+                        <a href="https://www.facebook.com/bhupesh.vermaa"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/bhupeshvermaa10/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/bhupeshvermaa/"><i class="fab fa-instagram"></i></a>
+                    </span>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item p-4">
+                <div class="overflow-hidden mb-4">
+                    <img class="img-fluid" src="https://scontent.fmaa8-1.fna.fbcdn.net/v/t1.6435-1/96683212_1684467671700449_2888170631008878592_n.jpg?stp=dst-jpg_s320x320&_nc_cat=101&ccb=1-7&_nc_sid=7206a8&_nc_ohc=H6Wh9v6ITzAAX_p4q7e&_nc_ht=scontent.fmaa8-1.fna&oh=00_AfDhvpxZiyO9ED9T1CTocjbb6r2CnnXxyqm-X1WGiy_j3w&oe=6509B1FF" alt="">
+                </div>
+                <h5 class="mb-0">PUJA DEY</h5>
+                <p>GOVERNOR</p>
+                <div class="btn-slide mt-1">
+                    <i class="fa fa-share"></i>
+                    <span>
+                        <a href="https://www.facebook.com/puja.dey.7564"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/puja-dey-2812abb6/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/puja_dey94/"><i class="fab fa-instagram"></i></a>
+                    </span>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="row g-4 p-5 ">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="team-item p-4">
+              <div class="overflow-hidden mb-4">
+                  <img class="img-fluid" src="https://media.licdn.com/dms/image/D5603AQF2051cV5uuew/profile-displayphoto-shrink_800_800/0/1672238364766?e=1698278400&v=beta&t=Sjhvq087FmdQRVk6BILA22B_jR4fMNYnSDqufFGez8M"  alt="">
+              </div>
+              <h5 class="mb-0">ABHISHEK SINGH MAURYA</h5>
+              <p>DEVELOPMENT HEAD</p>
+              <div class="btn-slide mt-1">
+                  <i class="fa fa-share"></i>
+                  <span>
+                      <a href="https://www.facebook.com/abhimaurya0001"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://www.linkedin.com/in/abhishek-singh-maurya-621911217/"><i class="fab fa-linkedin"></i></a>
+                      <a href="https://www.instagram.com/abhishekmaurya3053/"><i class="fab fa-instagram"></i></a>
+                  </span>
+              </div>
+          </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="team-item p-4">
+              <div class="overflow-hidden mb-4">
+                  <img class="img-fluid" src="https://media.licdn.com/dms/image/D4D03AQE3Bayq1TiMlA/profile-displayphoto-shrink_800_800/0/1691683778148?e=1698278400&v=beta&t=OUqwNFyiKdyEbkB3JLTJ942Fknk_7Ig2JV2XQXrGdeE" alt="">
+              </div>
+              <h5 class="mb-0">KOUSHAL MUJALDE</h5>
+              <p>DESIGN HEAD</p>
+              <div class="btn-slide mt-1">
+                  <i class="fa fa-share"></i>
+                  <span>
+                      <a href="https://www.facebook.com/shivam.bhalse.9862"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://www.linkedin.com/in/koushal-mujalde-284aa222b/"><i class="fab fa-linkedin"></i></a>
+                      <a href=""><i class="fab fa-instagram"></i></a>
+                  </span>
+              </div>
+          </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="team-item p-4">
+              <div class="overflow-hidden mb-4">
+                  <img class="img-fluid" src="https://media.licdn.com/dms/image/C5603AQFgmOhJzA-0wA/profile-displayphoto-shrink_800_800/0/1609663283698?e=1698278400&v=beta&t=cp45O5HKSu6XJG6bgjVMXvSNVRNYX1nOiuw7ESpwNtQ"  alt="">
+              </div>
+              <h5 class="mb-0">ATREYEE DEY</h5>
+              <p>DESIGN HEAD</p>
+              <div class="btn-slide mt-1">
+                  <i class="fa fa-share"></i>
+                  <span>
+                      <a href="https://www.facebook.com/atreyee.dey.12"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://www.linkedin.com/in/atreyee-dey-05384415a/"><i class="fab fa-linkedin"></i></a>
+                      <a href="https://www.instagram.com/atreyee_dey18/"><i class="fab fa-instagram"></i></a>
+                  </span>
+              </div>
+          </div>
+          </div>
       </div>
-      <div class="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg py-5">
-        <div>
-          <div class="relative pb-56 mb-4 rounded shadow lg:pb-64">
-            <img class="absolute object-cover w-full h-full rounded" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="Person" />
-          </div>
-          <div class="flex flex-col sm:text-center">
-            <p class="text-lg font-bold">Abhishek Singh Maurya </p>
-            <p class="mb-5 text-xs text-gray-800">Web Head</p>
-            <div class="flex items-center space-x-3 sm:justify-center">
-              <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
-                  <path
-                    d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"
-                  ></path>
-                </svg>
-              </a>
-              <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
-                  <path
-                    d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
-                  ></path>
-                </svg>
-              </a>
+      <div class="row g-4 p-5 ">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="team-item p-4">
+            <div class="overflow-hidden mb-4">
+                <img class="img-fluid" src="https://media.licdn.com/dms/image/D4D03AQHXEFeCrPtxAg/profile-displayphoto-shrink_400_400/0/1692358035631?e=1698278400&v=beta&t=oiq6RoFeJlnbfUtmeKqVKZKWtIYXw4OPtYZ_5jlNzfA" alt="">
             </div>
-          </div>
-        </div>
-        <div>
-          <div class="relative pb-56 mb-4 rounded shadow lg:pb-64">
-            <img class="absolute object-cover w-full h-full rounded" src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
-          </div>
-          <div class="flex flex-col sm:text-center">
-            <p class="text-lg font-bold">Koushal Mujalde</p>
-            <p class="mb-5 text-xs text-gray-800">Design Head</p>
-            <div class="flex items-center space-x-3 sm:justify-center">
-              <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
-                  <path
-                    d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"
-                  ></path>
-                </svg>
-              </a>
-              <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
-                  <path
-                    d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
-                  ></path>
-                </svg>
-              </a>
+            <h5 class="mb-0">RAVI KATARIYA</h5>
+            <p>TREE CENSUS HEAD</p>
+            <div class="btn-slide mt-1">
+                <i class="fa fa-share"></i>
+                <span>
+                    <a href="https://www.facebook.com/ravi.katariya.4"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/ravi-katariya-576a45217/" ><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/rviii_04/"><i class="fab fa-instagram"></i></a>
+                </span>
             </div>
-          </div>
         </div>
-        <div>
-          <div class="relative pb-56 mb-4 rounded shadow lg:pb-64">
-            <img class="absolute object-cover w-full h-full rounded" src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
-          </div>
-          <div class="flex flex-col sm:text-center">
-            <p class="text-lg font-bold">Alice Melbourne</p>
-            <p class="mb-5 text-xs text-gray-800">Human Resources</p>
-            <div class="flex items-center space-x-3 sm:justify-center">
-              <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
-                  <path
-                    d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"
-                  ></path>
-                </svg>
-              </a>
-              <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
-                  <path
-                    d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
-                  ></path>
-                </svg>
-              </a>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="team-item p-4">
+            <div class="overflow-hidden mb-4">
+                <img class="img-fluid" src="https://media.licdn.com/dms/image/C5603AQEPW_vwD4amHQ/profile-displayphoto-shrink_400_400/0/1595069272010?e=1698278400&v=beta&t=qqhL6GmxwQrsYUWw2eQpV4TfxLpd4v4NRD-AhU83Ybg" alt="">
             </div>
-          </div>
-        </div>
-        <div>
-          <div class="relative pb-56 mb-4 rounded shadow lg:pb-64">
-            <img class="absolute object-cover w-full h-full rounded" src="https://images.pexels.com/photos/3931603/pexels-photo-3931603.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
-          </div>
-          <div class="flex flex-col sm:text-center">
-            <p class="text-lg font-bold">John Doe</p>
-            <p class="mb-5 text-xs text-gray-800">Good guy</p>
-            <div class="flex items-center space-x-3 sm:justify-center">
-              <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
-                  <path
-                    d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"
-                  ></path>
-                </svg>
-              </a>
-              <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
-                  <path
-                    d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
-                  ></path>
-                </svg>
-              </a>
+            <h5 class="mb-0">AYUSHI DHAR</h5>
+            <p>TREE CENSUS HEAD</p>
+            <div class="btn-slide mt-1">
+                <i class="fa fa-share"></i>
+                <span>
+                    <a href="https://www.facebook.com/ayushi.dhar.3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/ayushi-dhar/"><i class="fab fa-linkedin"></i></a>
+                    <a  href="https://www.instagram.com/ayushi.rogue_one/"><i class="fab fa-instagram"></i></a>
+                </span>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg">
-        <div>
-          <div class="relative pb-56 mb-4 rounded shadow lg:pb-64">
-            <img class="absolute object-cover w-full h-full rounded" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="Person" />
-          </div>
-          <div class="flex flex-col sm:text-center">
-            <p class="text-lg font-bold">Rajvardhan Singh Jadon</p>
-            <p class="mb-5 text-xs text-gray-800">Governor</p>
-            <div class="flex items-center space-x-3 sm:justify-center">
-              <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
-                  <path
-                    d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"
-                  ></path>
-                </svg>
-              </a>
-              <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
-                  <path
-                    d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
-                  ></path>
-                </svg>
-              </a>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+          <div class="team-item p-4">
+            <div class="overflow-hidden mb-4">
+                <img class="img-fluid" src="https://media.licdn.com/dms/image/D5603AQGp1LclSmv4yQ/profile-displayphoto-shrink_400_400/0/1692642788563?e=1698278400&v=beta&t=tdbEh-2xhuuy0HkWX8IALH-52h3KewrYoBTfs7Gmvmg"  alt="">
             </div>
-          </div>
-        </div>
-        <div>
-          <div class="relative pb-56 mb-4 rounded shadow lg:pb-64">
-            <img class="absolute object-cover w-full h-full rounded" src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
-          </div>
-          <div class="flex flex-col sm:text-center">
-            <p class="text-lg font-bold">Bhupesh Verma</p>
-            <p class="mb-5 text-xs text-gray-800">Governor</p>
-            <div class="flex items-center space-x-3 sm:justify-center">
-              <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
-                  <path
-                    d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"
-                  ></path>
-                </svg>
-              </a>
-              <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
-                  <path
-                    d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
-                  ></path>
-                </svg>
-              </a>
+            <h5 class="mb-0">VINI MUJALDA</h5>
+            <p>PR Head</p>
+            <div class="btn-slide mt-1">
+                <i class="fa fa-share"></i>
+                <span>
+                    <a href="https://www.facebook.com/vinit.muzalda.1"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/vinit-muzalda-039129216/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/the_vinit_muzalda/" ><i class="fab fa-instagram"></i></a>
+                </span>
             </div>
-          </div>
         </div>
-        <div>
-          <div class="relative pb-56 mb-4 rounded shadow lg:pb-64">
-            <img class="absolute object-cover w-full h-full rounded" src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
-          </div>
-          <div class="flex flex-col sm:text-center">
-            <p class="text-lg font-bold">Rishav Saho</p>
-            <p class="mb-5 text-xs text-gray-800">Governor</p>
-            <div class="flex items-center space-x-3 sm:justify-center">
-              <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
-                  <path
-                    d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"
-                  ></path>
-                </svg>
-              </a>
-              <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
-                  <path
-                    d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-          </div>
         </div>
-        <div>
-          <div class="relative pb-56 mb-4 rounded shadow lg:pb-64">
-            <img class="absolute object-cover w-full h-full rounded" src="https://images.pexels.com/photos/3931603/pexels-photo-3931603.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
-          </div>
-          <div class="flex flex-col sm:text-center">
-            <p class="text-lg font-bold">Puja</p>
-            <p class="mb-5 text-xs text-gray-800">Governor</p>
-            <div class="flex items-center space-x-3 sm:justify-center">
-              <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
-                  <path
-                    d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"
-                  ></path>
-                </svg>
-              </a>
-              <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
-                  <path
-                    d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> {% endcomment %}
-
-
-
-
-    <section class="bg-white">
-      <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
-          <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
-              <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">Our team</h2>
-              <p class="font-light text-gray-500 sm:text-xl ">Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p>
-          </div>
-          <div class="grid gap-8 lg:gap-16 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            <div class="text-center text-gray-500 ">
-              <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="https://media.licdn.com/dms/image/D4D03AQFsnFKEAKxlmA/profile-displayphoto-shrink_400_400/0/1690711049957?e=1698278400&v=beta&t=iAaKJBCh1yMK7n7exY8bO-YX79_6MOsADjWUAeSK4pE" alt="Bonnie Avatar">
-              <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
-                  <a href="#">Rajvardhan Singh Jadon</a>
-              </h3>
-              <p>Governor</p>
-              <ul class="flex justify-center mt-4 space-x-4">
-                  <li>
-                    {% comment %} linkedin {% endcomment %}
-                      <a href="#" class="text-[#39569c] hover:text-gray-900 ">
-                          <svg xmlns="http://www.w3.org/2000/svg"  class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                      </a>
-                  </li>
-                  <li>
-                    {% comment %} facebook  {% endcomment %}
-                      <a href="#" class="text-[#00acee] hover:text-gray-900 ">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" class="text-gray-900 hover:text-gray-900 ">
-                        {% comment %} instagram {% endcomment %}
-                        <svg class="w-6 h-6" fill="#E4405F" viewBox="0 0 24 24" aria-hidden="true">
-                          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                        </svg>
-                        
-                      </a>
-                  </li>
-                  
-              </ul>
-          </div>
-          <div class="text-center text-gray-500 ">
-            <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="https://media.licdn.com/dms/image/D5603AQHEVQDyH61D2g/profile-displayphoto-shrink_400_400/0/1670048053250?e=1698278400&v=beta&t=1jPXnkAIz2a08aA7rvNNr4P1yNItQUuvrN4GFJBwr58" alt="Bonnie Avatar">
-            <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
-                <a href="#">Bhupesh Verma</a>
-            </h3>
-            <p>Governor</p>
-            <ul class="flex justify-center mt-4 space-x-4">
-              <li>
-                  <a href="#" class="text-[#39569c] hover:text-gray-900 ">
-                      <svg xmlns="http://www.w3.org/2000/svg"  class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                  </a>
-              </li>
-              <li>
-                  <a href="#" class="text-[#00acee] hover:text-gray-900 ">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg>
-                  </a>
-              </li>
-              <li>
-                  <a href="#" class="text-gray-900 hover:text-gray-900 ">
-                     
-
-                    <svg class="w-6 h-6" fill="#E4405F" viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                    </svg>
-                    
-                  </a>
-              </li>
-              
-          </ul>
-        </div>
-        <div class="text-center text-gray-500 ">
-          <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar">
-          <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
-              <a href="#">Puja Dey</a>
-          </h3>
-          <p>Governor</p>
-          <ul class="flex justify-center mt-4 space-x-4">
-            <li>
-                <a href="#" class="text-[#39569c] hover:text-gray-900 ">
-                    <svg xmlns="http://www.w3.org/2000/svg"  class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="text-[#00acee] hover:text-gray-900 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="text-gray-900 hover:text-gray-900 ">
-                   
-
-                  <svg class="w-6 h-6" fill="#E4405F" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                  </svg>
-                  
-                </a>
-            </li>
-            
-        </ul>
-      </div>
-      <div class="text-center text-gray-500 ">
-        <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="https://media.licdn.com/dms/image/D5603AQF2051cV5uuew/profile-displayphoto-shrink_800_800/0/1672238364766?e=1698278400&v=beta&t=Sjhvq087FmdQRVk6BILA22B_jR4fMNYnSDqufFGez8M" alt="Bonnie Avatar">
-        <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
-            <a href="#">Abhishek Singh Maurya</a>
-        </h3>
-        <p>Development Head</p>
-        <ul class="flex justify-center mt-4 space-x-4">
-          <li>
-              <a href="#" class="text-[#39569c] hover:text-gray-900 ">
-                  <svg xmlns="http://www.w3.org/2000/svg"  class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-              </a>
-          </li>
-          <li>
-              <a href="#" class="text-[#00acee] hover:text-gray-900 ">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg>
-              </a>
-          </li>
-          <li>
-              <a href="#" class="text-gray-900 hover:text-gray-900 ">
-                 
-
-                <svg class="w-6 h-6" fill="#E4405F" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                </svg>
-                
-              </a>
-          </li>
-          
-      </ul>
     </div>
-    <div class="text-center text-gray-500 ">
-      <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="https://media.licdn.com/dms/image/D4D03AQE3Bayq1TiMlA/profile-displayphoto-shrink_400_400/0/1691683778148?e=1698278400&v=beta&t=FibPEuyl0TbiiShi4gZq6Qf6QqQieyVU5blHE_vToeI" alt="Bonnie Avatar">
-      <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
-          <a href="#">Koushal Mujalde</a>
-      </h3>
-      <p>Design Head</p>
-      <ul class="flex justify-center mt-4 space-x-4">
-        <li>
-            <a href="#" class="text-[#39569c] hover:text-gray-900 ">
-                <svg xmlns="http://www.w3.org/2000/svg"  class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="text-[#00acee] hover:text-gray-900 ">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="text-gray-900 hover:text-gray-900 ">
-               
+    </div>
+</div>
 
-              <svg class="w-6 h-6" fill="#E4405F" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-              </svg>
-              
-            </a>
-        </li>
-        
-    </ul>
-  </div>
-  <div class="text-center text-gray-500 ">
-    <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="https://media.licdn.com/dms/image/C5603AQFgmOhJzA-0wA/profile-displayphoto-shrink_400_400/0/1609663283698?e=1698278400&v=beta&t=sOYAcCkO_5W31s1jHxcx9bjkywBJ0_zXs447bmqc-ME" alt="Bonnie Avatar">
-    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
-        <a href="#">Atreyee Dey</a>
-    </h3>
-    <p>Design Head</p>
-    <ul class="flex justify-center mt-4 space-x-4">
-      <li>
-          <a href="#" class="text-[#39569c] hover:text-gray-900 ">
-              <svg xmlns="http://www.w3.org/2000/svg"  class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-          </a>
-      </li>
-      <li>
-          <a href="#" class="text-[#00acee] hover:text-gray-900 ">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg>
-          </a>
-      </li>
-      <li>
-          <a href="#" class="text-gray-900 hover:text-gray-900 ">
-             
 
-            <svg class="w-6 h-6" fill="#E4405F" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-            </svg>
-            
-          </a>
-      </li>
-      
-  </ul>
-</div>
-<div class="text-center text-gray-500 ">
-  <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="https://media.licdn.com/dms/image/D4D03AQHXEFeCrPtxAg/profile-displayphoto-shrink_400_400/0/1692358035631?e=1698278400&v=beta&t=oiq6RoFeJlnbfUtmeKqVKZKWtIYXw4OPtYZ_5jlNzfA" alt="Bonnie Avatar">
-  <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
-      <a href="#">Ravi katariya</a>
-  </h3>
-  <p>Tree census</p>
-  <ul class="flex justify-center mt-4 space-x-4">
-      <li>
-          <a href="#" class="text-[#39569c] hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-          </a>
-      </li>
-      <li>
-          <a href="#" class="text-[#00acee] hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
-          </a>
-      </li>
-      <li>
-          <a href="#" class="text-gray-900 hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
-          </a>
-      </li>
-      <li>
-          <a href="#" class="text-[#ea4c89] hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd" /></svg>
-          </a> 
-      </li> 
-  </ul>
-</div>
-<div class="text-center text-gray-500 ">
-  <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="https://media.licdn.com/dms/image/C5603AQEPW_vwD4amHQ/profile-displayphoto-shrink_800_800/0/1595069272010?e=1698278400&v=beta&t=sUiJpf5ICby0jlmdxCw-pvYB6AGfJS3vMH4hb0_SmmA" alt="Bonnie Avatar">
-  <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
-      <a href="#">Ayushi Dhar</a>
-  </h3>
-  <p>Tree Census</p>
-  <ul class="flex justify-center mt-4 space-x-4">
-      <li>
-          <a href="#" class="text-[#39569c] hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-          </a>
-      </li>
-      <li>
-          <a href="#" class="text-[#00acee] hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
-          </a>
-      </li>
-      <li>
-          <a href="#" class="text-gray-900 hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
-          </a>
-      </li>
-      <li>
-          <a href="#" class="text-[#ea4c89] hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd" /></svg>
-          </a> 
-      </li> 
-  </ul>
-</div>
-<div class="text-center text-gray-500 ">
-  <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="https://media.licdn.com/dms/image/D5603AQEFHEEYjYxJ8A/profile-displayphoto-shrink_400_400/0/1684145331462?e=1698278400&v=beta&t=KgbzJYMiLCpw-QEly7mu4b14GX4jpUnxxaRzkK9TCMI" alt="Bonnie Avatar">
-  <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
-      <a href="#">Sumit Kumar</a>
-  </h3>
-  <p>PR Head</p>
-  <ul class="flex justify-center mt-4 space-x-4">
-      <li>
-          <a href="#" class="text-[#39569c] hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-          </a>
-      </li>
-      <li>
-          <a href="#" class="text-[#00acee] hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
-          </a>
-      </li>
-      <li>
-          <a href="#" class="text-gray-900 hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
-          </a>
-      </li>
-      <li>
-          <a href="#" class="text-[#ea4c89] hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd" /></svg>
-          </a> 
-      </li> 
-  </ul>
-</div>
-<div class="text-center text-gray-500 ">
-  <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="https://media.licdn.com/dms/image/C4D03AQFP7ej6VyDJBg/profile-displayphoto-shrink_400_400/0/1660997347985?e=1698278400&v=beta&t=evmWjkFNTB3RqNz_xHa09Juzjzz4lnwx4gIrflDiJ9Y" alt="Bonnie Avatar">
-  <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
-      <a href="#">Vinit Mujalda</a>
-  </h3>
-  <p>PR Head</p>
-  <ul class="flex justify-center mt-4 space-x-4">
-      <li>
-          <a href="#" class="text-[#39569c] hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-          </a>
-      </li>
-      <li>
-          <a href="#" class="text-[#00acee] hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
-          </a>
-      </li>
-      <li>
-          <a href="#" class="text-gray-900 hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
-          </a>
-      </li>
-      <li>
-          <a href="#" class="text-[#ea4c89] hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd" /></svg>
-          </a> 
-      </li> 
-  </ul>
-</div>              <div class="text-center text-gray-500 ">
-  <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar">
-  <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
-      <a href="#">Bonnie Green</a>
-  </h3>
-  <p>CEO/Co-founder</p>
-  <ul class="flex justify-center mt-4 space-x-4">
-      <li>
-          <a href="#" class="text-[#39569c] hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-          </a>
-      </li>
-      <li>
-          <a href="#" class="text-[#00acee] hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
-          </a>
-      </li>
-      <li>
-          <a href="#" class="text-gray-900 hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
-          </a>
-      </li>
-      <li>
-          <a href="#" class="text-[#ea4c89] hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd" /></svg>
-          </a> 
-      </li> 
-  </ul>
-</div>              <div class="text-center text-gray-500 ">
-  <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar">
-  <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
-      <a href="#">Bonnie Green</a>
-  </h3>
-  <p>CEO/Co-founder</p>
-  <ul class="flex justify-center mt-4 space-x-4">
-      <li>
-          <a href="#" class="text-[#39569c] hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-          </a>
-      </li>
-      <li>
-          <a href="#" class="text-[#00acee] hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
-          </a>
-      </li>
-      <li>
-          <a href="#" class="text-gray-900 hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
-          </a>
-      </li>
-      <li>
-          <a href="#" class="text-[#ea4c89] hover:text-gray-900 ">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd" /></svg>
-          </a> 
-      </li> 
-  </ul>
-</div>
+
+
+
+
+  
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container py-5">
+          <div class="text-center">
+              <h4 class="text-secondary text-uppercase">Testimonial</h4>
+              <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 ">Our Patrons & Mentors
+              </span></h1>
 
           </div>
+          <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+              <div class="testimonial-item p-4 my-5">
+                  <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                  <div class="d-flex align-items-end mb-4">
+                      <img class="img-fluid flex-shrink-0" src="{% static 'testimonials/drsunil.jpg' %}" style="width: 80px; height: 80px;">
+                      <div class="ms-4">
+                          <h4 class="mb-1">Dr. Saamdu Chetri</h4>
+                          <p class="m-0">Professor at IIT Kharagpur; Former Joint Secretary at Prime Minister’s Office, Bhutan;</p>
+                      </div>
+                  </div>
+                  <p class="mb-0">" I commended the work of the Vision Prabaho (VP) directed for saving the planet earth for the wellbeing of the human race. A young and dedicate group of students from IIT Kharagpur has launched this program, the VP. I have taken part in a few of their events and have fallen in love with their attitude and the efforts they put to enlivening the planet earth with a humble beginning. They can change the world stage if we can support them. I wish them more energy and light to live up with their vision. ”</p>
+              </div>
+              <div class="testimonial-item p-4 my-5">
+                  <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                  <div class="d-flex align-items-end mb-4">
+                      <img class="img-fluid flex-shrink-0" src="{% static 'testimonials/barnali.jpg' %}" style="width: 80px; height: 80px;">
+                      <div class="ms-4">
+                          <h5 class="mb-1">Ms. Barnali Chakrabarti
+                          </h5>
+                          <p class="m-0">Botanist and Environmental evangelist
+
+                          </p>
+                      </div>
+                  </div>
+                  <p class="mb-0">"I have closely worked with members of Vision Prabaho. They are group of really dedicated ones believing in better sustainable environment and side by side working for better living for the marginalized ones. All the members are dedicated and honest and have a clear vision of what needs to be done. I do hope to and looking forward to work closely with them and help in their endeavours. ”</p>
+              </div>
+              <div class="testimonial-item p-4 my-5">
+                  <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                  <div class="d-flex align-items-end mb-4">
+                      <img class="img-fluid flex-shrink-0" src="{% static 'testimonials/ppc.jpg' %}" style="width: 80px; height: 80px;">
+                      <div class="ms-4">
+                          <h5 class="mb-1">Dr. Partha Pratim Chakrabarti
+                          </h5>
+                          <p class="m-0">Shanti Swarup Bhatnagar Awardee; Professor at IIT Kharagpur; Former Director at IIT Kharagpur; Mentor Director at IIIT Kalyani</p>
+                      </div>
+                  </div>
+                  <p class="mb-0">“ I am deeply impressed by the passion, mission, effort, execution and sustained thoughtful work of Team Vision Prabaho, whom I have known for many years. They have taken up the most ideal activity applicable today from students – that of combining science, technology, ecology and community participation for a sustainable planet. Their work covering all angles from awareness to participatory implementation has yielded real benefits both in the mind of people as well as on the ground. They are a group who can help bring about transformation and I strongly recommend all well-wishers to support them as many of us are doing. I wish them more energy and power to live up to their vision and dream for a better planet. ”
+
+                  </p>
+              </div>
+              <div class="testimonial-item p-4 my-5">
+                  <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                  <div class="d-flex align-items-end mb-4">
+                      <img class="img-fluid flex-shrink-0" src="{% static 'testimonials/4.jpg' %}" style="width: 80px; height: 80px;">
+                      <div class="ms-4">
+                          <h5 class="mb-1">Honorable Former Justice Nadira Patherya
+                          </h5>
+                          <p class="m-0">Calcutta High Court
+
+                          </p>
+                      </div>
+                  </div>
+                  <p class="mb-0">“ I was invited by the organisation to IIT Kharagpur and was very impressed by the kind of work that the organisation was being done. Hope this kind of work is carried on so that the environment is eco-friendly and carbon dioxide is lessened in the air while oxygen helps us to breathe. Kudos to Vision Prabaho.”
+
+                  </p>
+              </div>
+          </div>
       </div>
-  </section>
-  
+  </div>
+  <!-- Testimonial End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <script>
     // Smooth scroll with sliding effect
@@ -937,9 +649,67 @@
       </div>
     </div>
   </section>
-  
+      <!-- Footer Start -->
+      <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Address</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Services</h4>
+                    <a class="btn btn-link" href="">Air Freight</a>
+                    <a class="btn btn-link" href="">Sea Freight</a>
+                    <a class="btn btn-link" href="">Road Freight</a>
+                    <a class="btn btn-link" href="">Logistic Solutions</a>
+                    <a class="btn btn-link" href="">Industry solutions</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
 
 
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
   
