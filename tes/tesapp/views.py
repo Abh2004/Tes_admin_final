@@ -157,27 +157,18 @@ def contact_view(request):
     return render(request, 'tesapp/home.html', {'form': form})
 
 
-from django.shortcuts import render
-from .forms import SubscriberForm  # Make sure to import the correct form
+from django.http import JsonResponse
+from .models import Subscriber
 
 def subscribe_view(request):
     if request.method == 'POST':
-        form = SubscriberForm(request.POST)
-        if form.is_valid():
-            name = form.cleaned_data['name']
-            roll_no = form.cleaned_data['roll_no']
-            email = form.cleaned_data['email']
-            
-            # Save the data into the database
-            new_subscriber = Subscriber(name=name, roll_no=roll_no, email=email)
-            new_subscriber.save()
+        email = request.POST.get('email')  # Get the email from the form
+        subscriber = Subscriber(email=email)
+        subscriber.save()
+        return JsonResponse({'message': 'Subscription successful'})
 
-            success_message = "Thank you for subscribing!"
-            return render(request, 'tesapp/subscribe.html', {'success_message': success_message})
-    else:
-        form = SubscriberForm()  # Use the correct form class
+    return render(request, 'subscribe.html')  # Render the form initially
 
-    return render(request, 'tesapp/subscribe.html', {'form': form})
 
 
 
